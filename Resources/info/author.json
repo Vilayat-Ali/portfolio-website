@@ -1,6 +1,31 @@
 {
-        "Name": "Syed Vilayat Ali Rizvi",
-        "Email": "vilayatcodemysite@gmail.com",
-        "Role": ["Inventor", "CEO", "Project Manager", "Lead Developer"]
+        "personal_info": {
+                "Name": "Syed Vilayat Ali Rizvi",
+                "contacts": {
+                        "Email": "vilayatcodemysite@gmail.com",
+                        "LinkedIn": "address-to-linkedIn"
+                        },
+                "Role": ["Inventor", "CEO", "Project Manager", "Lead Developer"]
+        },
+
+        "professional_info": {
+                "status": "Student",
+                "organisation": "Chaudhary Charan Singh University, Meerut"
+        },
+
+        "collab_info": {
+                "collab-status": "Free for collab",
+                "git repo": "https://github.com/Vilayat-Ali",
+                "events":[
+                        {
+                                "name_of_event": "Equinox 2021",
+                                "organisor": [
+                                        "VIT, Vellore",
+                                        "Major League Hack"
+                                ],
+                                "performance": "Runner Up"
+                        }
+                ]
+        }
 }
    

@@ -1,0 +1,104 @@
+{
+    "sections": {
+
+
+        "installation": {
+            "heading": "Installing Vilcrypt and Setting up Dev Environment",
+            "steps": [
+                {
+                    "sub_head": "Install Python",
+                    "media": "",
+                    "description_step": [
+                        "Go to https://www.python.org/downloads/.",
+                        "Download the latest stable release of the python programming language.",
+                        "Install python on your computer and make sure that you have checked the box which reads \"Add to PATH\".",
+                        "Your python installation is done!"
+                    ]     
+                },
+                {
+                    "sub_head": "Open your text editor",
+                    "media": "",
+                    "description_step": [
+                        "In your computer, navigate to your favourite text editor.",
+                        "If you don't have one installed, you can use notepad (in windows), or TextEdit (in Mac OS), or you can download and install one. (VS Code is highly recommended).",
+                        "Open the text editor."
+                    ]
+                },
+                {
+                    "sub_head": "Open the terminal or python shell",
+                    "media": "",
+                    "description_step": [
+                        "You can open the terminal (from text-editor or manually) or python shell",
+                        "Type the following command: pip install vilcrypt",
+                        "Wait till python package installer install all necessary files and depencies of the vilcrypt package. Voila! vilcrypt is installed in your computer."
+                    ]     
+                }
+            ]
+        },
+        
+
+        "encryption_prg": {
+            "heading": "Encrypting data in a python program using vilcrypt",
+            "steps": [
+                {
+                    "sub_head": "Import the vilcrypt package",
+                    "media": "",
+                    "description_step": [
+                        "Make a new python file.",
+                        "Type the following command to import vilcrypt into your project: from vilcrypt import encryptor.",
+                        "Now your required module files are imported into your current project and is ready to be used."
+                    ]     
+                },
+                {
+                    "sub_head": "Passing data and performing encryption",
+                    "media": "",
+                    "description_step": [
+                        "Put your data into a variable, example: (data = \"Hello Vilcrypt\").", 
+                        "Now make an instance of the class encryptor and store in a variable and pass your data variable as a paramenter. Example (obj = encryptor(data).",
+                        "Type the following command to encrypt and use a variable to store the returned values. Example (encrData = obj.Encrypt())."
+                    ]
+                },
+                {
+                    "sub_head": "Managing post-encrption data",
+                    "media": "",
+                    "description_step": [
+                        "An array is returned by Encrypt() method which is stored in the encrData variable. This array has a total length of 2 and stores the following data: Cipher data, encryption key.",
+                        "Cipher data is accessable from the zeroth index position of the returned array, use a variable. Example: (cipher = encrData[0]).",
+                        "Encryption key is accessable from the first index position of the returned array, use a variable. Example: (key = encrData[1]).",
+                        "Voila! Your data is now encrypted!!"
+                    ]
+                }
+            ]
+            
+        },
+
+
+        "decryption_prg": {
+            "heading": "Decrypting data in a python program using vilcrypt",
+            "steps": [
+                {
+                    "sub_head": "Import the vilcrypt package (Skip if you have already have it imported)",
+                    "media": "",
+                    "description_step": [
+                        "Make a new python file.",
+                        "Type the following command to import vilcrypt into your project: from vilcrypt import encryptor.",
+                        "Now your required module files are imported into your current project and is ready to be used."
+                    ]     
+                },
+                {
+                    "sub_head": "Managing pre-decryption data and performing decryption",
+                    "media": "",
+                    "description_step": [
+                        "Collect your cipher text and encryption key and store these data into variables.", 
+                        "Now make an instance of the class decryptor and store in a variable and pass your data variable as a paramenter. Example (obj = decryptor(cipherData, key).",
+                        "Type the following command to encrypt and use a variable to store the returned values. Example (Data = obj.decrypt()).",
+                        "Voila! cipher data gets decrypted into plain text."
+                    ]
+                }
+            ]
+        }
+
+
+
+    }
+}

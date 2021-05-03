@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "name": "Vilcrypt",
+            "status": "Launch Soon",
+            "version": "1.0.0",
+            "description": "Advanced pattern-based encryption module",
+            "language": "Python",
+            "platform": ["Python via PyPi", "JavaScript via NPM (launching Soon)"],
+            "available_at": "To be installed via terminal instructions",
+            "logo": "../Resources/Media/img_logo/VilCrypt.png"
+        },
+        {
+            "name": "VilDB",
+            "status": "Launch Soon",
+            "version": "1.0.0",
+            "description": "Simplified local DBMS",
+            "language": "Java",
+            "platform": ["Windows 10"],
+            "available_at": "Visit the website: https://_domain_address_of_vilDB.com",
+            "logo": "../Resources/Media/img_logo/VilDB.png"
+        },
+        {
+            "name": "vilAnimX",
+            "status": "Launch Soon",
+            "version": "1.0.0",
+            "description": "Easy & Powerful animation library for node based web appliation",
+            "language": "JavaScript",
+            "platform": ["NodeJS"],
+            "available_at": "Visit the website: https://_domain_address_of_vilanimX.com",
+            "logo": "../Resources/Media/img_logo/vilAnimX.png"
+        }
+    ]
+}

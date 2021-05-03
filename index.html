@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Resources/Media/VilCrypt.ico">
+    <link rel="shortcut icon" href="./Resources/Media/img_logo/VilCrypt.ico">
     <link rel="stylesheet" href="./Resources/css/index.css">
+    <link rel="stylesheet" href="./Resources/css/nav.css">
     <title>VilCrypt | Home</title>
 </head>
 <body>
-    
+    <nav>
+        <div class="logo-brand">
+            <img src="./Resources/Media/img_logo/VilCrypt.png">
+        </div>
+        <div class="links">
+            <div class="home">Home</div>
+            <div class="Doc">Documentation</div>
+            <div class="Contributor">Contributors</div>
+            <div class="About">About</div>
+        </div>
+    </nav>
+    <script>
+        const Home = document.querySelector('.home');
+        const Doc = document.querySelector('.Doc');
+        const Contributor = document.querySelector('.Contributor');
+        const About = document.querySelector('.About');
+
+        Home.addEventListener('click', ()=>{
+            window.location.href = "./index.html";
+        });
+
+        Doc.addEventListener('click', ()=>{
+            window.location.href = "./Pages/doc.html";
+        });
+
+        Contributor.addEventListener('click', ()=>{
+            window.location.href = "./Pages/contributor.html";
+        });
+
+        About.addEventListener('click', ()=>{
+            window.location.href = "./Pages/about.html";
+        });
+    </script>
+    <script src="./Resources/scripts/index.js"></script>
 </body>
 </html>
