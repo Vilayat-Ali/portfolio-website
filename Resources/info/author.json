@@ -1,7 +1,7 @@
 {
         "personal_info": {
                 "Name": "Syed Vilayat Ali Rizvi",
-                "contacts": {
+                "Contacts": {
                         "Email": "vilayatcodemysite@gmail.com",
                         "LinkedIn": "address-to-linkedIn"
                         },
@@ -14,12 +14,12 @@
         },
 
         "collab_info": {
-                "collab-status": "Free for collab",
-                "git repo": "https://github.com/Vilayat-Ali",
-                "events":[
+                "collab_status": "Free for collab",
+                "git_repo": "https://github.com/Vilayat-Ali",
+                "events": [
                         {
                                 "name_of_event": "Equinox 2021",
-                                "organisor": [
+                                "organizer": [
                                         "VIT, Vellore",
                                         "Major League Hack"
                                 ],
