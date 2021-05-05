@@ -1,14 +1,77 @@
-<!DOCTYPE html>
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Resources/Media/img_logo/VilCrypt.ico">
-    <link rel="stylesheet" href="../Resources/css/about.css">
     <link rel="stylesheet" href="../Resources/css/nav.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>VilCrypt | About</title>
+    <link rel="stylesheet" href="../Resources/css/doc.css">
+    <title>VilCrypt | Projects</title>
+    <style>
+        /* Mobile mode */
+   @media all and (max-width: 600px){
+       body{
+           background-color: #15afed!important;
+       }
+       nav{
+           display: flex;
+           flex-direction: row;
+           background-color: #fff!important;
+           width: 100vw;
+       }
+       nav .logo-brand{
+           width: 25vw;
+           margin-left: auto;
+           margin-right: auto;
+       }
+       nav .logo-brand img{
+           width: inherit;
+           object-fit: cover;
+       }
+       nav .ham {
+           margin-top: 5vw;
+           font-size: 12vw;
+           margin-right: 10vw;
+       }
+       nav .links{
+           display: none;
+       }
+       .nav-tog{
+           width: 100vw;
+           font-size: 8vw;
+           padding-left: 4vw;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
+           background-color: #fff;
+           margin-left: -110vw;
+       }
+       .nav-tog div{
+           padding: 2vw;
+           width: 90%;
+           margin-left: auto;
+           margin-right: auto;
+       }
+       .nav-tog div:hover{
+           background-color: rgba(0,0,0,0.6);
+       }
+   
+   
+       footer{
+           margin-top: 8vw;
+           width: 100%;
+           background-color: #fff;
+           padding: 2vw;
+       }
+       footer p{
+           text-align: center;
+           font-size: 4vw;
+           font-style: italic;
+       }
+   }
+   
+   </style>
 </head>
 <body>
     <nav>
@@ -31,38 +94,6 @@
         <div class="projects">Projects</div>
         <div class="About">About Author</div>
     </div>
-    <!-- Website body starts from here -->
-    <div class="author-block">
-        <div class="col-1">
-        </div>
-        <div class="col-2">
-            <p><span class="Name"></span></p>
-            <p class="role-title">Roles:</p>
-            <ul id="roleAuthor"></ul>
-            <p class="role-title">Email:</p>
-            <p><span class="Email"></span></p>
-            <p class="role-title">LinkedIn:</p>
-            <p><span class="LinkedIn"></span></p>
-            <p class="role-title">Employment-Status:</p>
-            <p><span class="status"></span></p>
-            <p class="role-title">Organization:</p>
-            <p><span class="org"></span></p>
-            <p class="role-title">Schedule status:</p>
-            <p><span class="sch_status"></span></p>
-            <p class="role-title">Events participated:</p>
-            <table class="tableData">
-                <tr>
-                    <th>Name of Event</th>
-                    <th>Organizer</th>
-                    <th>Performance</th>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <footer>
-        <p class="title-footer">Vilcrypt (c) - Syed Vilayat Ali Rizvi</p>
-    </footer>
-    <!-- Website body starts from here -->
     <script>
         var Home = document.querySelectorAll('.home');
         var Doc = document.querySelectorAll('.Doc');
@@ -135,6 +166,5 @@
         })
     </script>
     <script src="https://kit.fontawesome.com/f89eb210df.js" crossorigin="anonymous"></script>
-    <script src="../Resources/scripts/author.js"></script>
 </body>
 </html>

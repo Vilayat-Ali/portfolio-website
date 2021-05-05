@@ -1,11 +1,12 @@
 {
         "personal_info": {
-                "Name": "Tech-Man",
+                "Name": "Syed Vilayat Ali Rizvi",
                 "Contacts": {
                         "Email": "vilayatcodemysite@gmail.com",
                         "LinkedIn": "address-to-linkedIn"
                         },
-                "Role": ["Inventor", "CEO", "Project Manager", "Lead Developer"]
+                "Role": ["Inventor", "CEO", "Project Manager", "Lead Developer"],
+                "Photo": "../Resources/Media/contributors/CEO/author_pic.jpg"
         },
 
         "professional_info": {

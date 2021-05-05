@@ -82,7 +82,8 @@
             <div class="home">Home</div>
             <div class="Doc">Documentation</div>
             <div class="Contributor">Contributors</div>
-            <div class="About">About</div>
+            <div class="projects">Projects</div>
+            <div class="About">About Author</div>
         </div>
         <div class="ham"><i class="fas fa-bars"></i></div>
     </nav>
@@ -90,7 +91,8 @@
         <div class="home">Home</div>
         <div class="Doc">Documentation</div>
         <div class="Contributor">Contributors</div>
-        <div class="About">About</div>
+        <div class="projects">Projects</div>
+        <div class="About">About Author</div>
     </div>
 
 
@@ -100,6 +102,7 @@
         var Contributor = document.querySelectorAll('.Contributor');
         var About = document.querySelectorAll('.About');
         const ham = document.querySelector('.ham');
+        var projects = document.querySelectorAll('.projects');
 
         Home[0].addEventListener('click', ()=>{
             window.location.href = "./index.html";
@@ -111,6 +114,10 @@
 
         Contributor[0].addEventListener('click', ()=>{
             window.location.href = "./Pages/contributor.html";
+        });
+
+        projects[0].addEventListener('click', ()=>{
+            window.location.href = "./Pages/projects.html";
         });
 
         About[0].addEventListener('click', ()=>{
@@ -127,6 +134,10 @@
 
         Contributor[1].addEventListener('click', ()=>{
             window.location.href = "./Pages/contributor.html";
+        });
+
+        projects[1].addEventListener('click', ()=>{
+            window.location.href = "./Pages/projects.html";
         });
 
         About[1].addEventListener('click', ()=>{

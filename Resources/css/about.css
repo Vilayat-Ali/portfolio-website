@@ -17,9 +17,10 @@
 }
 .author-block .col-1{
     position: relative;
-    width: 25vw;
+    width: 30vw;
     margin-left: auto;
     margin-right: auto;
+    padding: 1.5vw;
 }
 .author-block .col-1 img{
     width: inherit;
@@ -98,9 +99,10 @@
 }
 footer{
     margin-top: 4vw;
-    width: 100%;
+    width: 100vw;
     background-color: #fff;
-    padding: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 footer p{
     text-align: center;
@@ -171,6 +173,7 @@ footer p{
         width: 75vw;
         margin-left: auto;
         margin-right: auto;
+        padding: 4vw;
     }
     .author-block .col-1 img{
         width: inherit;

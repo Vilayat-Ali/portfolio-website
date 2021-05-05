@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Resources/Media/img_logo/VilCrypt.ico">
     <link rel="stylesheet" href="../Resources/css/nav.css">
-    <title>VilCrypt | Contributor</title>
+    <link rel="stylesheet" href="../Resources/css/doc.css">
+    <title>VilCrypt | Contributions</title>
     <style>
         /* Mobile mode */
    @media all and (max-width: 600px){
@@ -81,7 +82,8 @@
             <div class="home">Home</div>
             <div class="Doc">Documentation</div>
             <div class="Contributor">Contributors</div>
-            <div class="About">About</div>
+            <div class="projects">Projects</div>
+            <div class="About">About Author</div>
         </div>
         <div class="ham"><i class="fas fa-bars"></i></div>
     </nav>
@@ -89,7 +91,8 @@
         <div class="home">Home</div>
         <div class="Doc">Documentation</div>
         <div class="Contributor">Contributors</div>
-        <div class="About">About</div>
+        <div class="projects">Projects</div>
+        <div class="About">About Author</div>
     </div>
     <script>
         var Home = document.querySelectorAll('.home');
@@ -97,6 +100,7 @@
         var Contributor = document.querySelectorAll('.Contributor');
         var About = document.querySelectorAll('.About');
         const ham = document.querySelector('.ham');
+        var projects = document.querySelectorAll('.projects');
 
         Home[0].addEventListener('click', ()=>{
             window.location.href = "../index.html";
@@ -114,6 +118,10 @@
             window.location.href = "./about.html";
         });
 
+        projects[0].addEventListener('click', ()=>{
+            window.location.href = "./projects.html";
+        });
+
         Home[1].addEventListener('click', ()=>{
             window.location.href = "../index.html";
         });
@@ -123,11 +131,15 @@
         });
 
         Contributor[1].addEventListener('click', ()=>{
-            window.location.href = "./Pages/contributor.html";
+            window.location.href = "./contributor.html";
         });
 
         About[1].addEventListener('click', ()=>{
-            window.location.href = "./Pages/about.html";
+            window.location.href = "./about.html";
+        });
+
+        projects[1].addEventListener('click', ()=>{
+            window.location.href = "./projects.html";
         });
 
         var count = false;
@@ -154,6 +166,5 @@
         })
     </script>
     <script src="https://kit.fontawesome.com/f89eb210df.js" crossorigin="anonymous"></script>
-    <script src="./Resources/scripts/index.js"></script>
 </body>
 </html>

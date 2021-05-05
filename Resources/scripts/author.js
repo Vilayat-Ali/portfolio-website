@@ -1,76 +1,98 @@
 // Storing data
-var name = document.querySelector(".name");
-var email = document.querySelector(".contact-email");
-
 fetch("../Resources/info/author.json")
-  .then(function(response) {
-    return response.json();
-  }).then(function(data){
+    .then(function(response){
+         return response.json();
+    })
+    .then(function(data){
 
-    var role = data.personal_info.Role;
-    var author_name = data.personal_info.Name;
-    console.log(author_name);
-    var email = data.personal_info.Contacts.Email;
-    var linkedIn = data.personal_info.Contacts.LinkedIn;
-    var status = data.professional_info.status;
-    var organisation = data.professional_info.organisation;
-    var sch_status = data.collab_info.collab_status;
+        // Declaring variables
+        const pic_frame = document.querySelector('.col-1');
+        const name = document.querySelector('.Name');
+        const role = document.querySelector('#roleAuthor');
+        const  email = document.querySelector('.Email');
+        const  linkedIn = document.querySelector('.LinkedIn');
+        const  status = document.querySelector('.status');
+        const  org = document.querySelector('.org');
+        const  sch_status = document.querySelector('.sch_status');
+        const Eventtable = document.querySelector('.tableData');
 
-    const name = document.querySelector(".Name");
-    const Email = document.querySelector(".Email");
-    const LinkedIn = document.querySelector(".LinkedIn");
-    const Status = document.querySelector('.status');
-    const org = document.querySelector('.org');
-    const sch = document.querySelector('.sch_status');
-    const tableData = document.querySelector('.tableData');
-    
-    var events = [];
 
-    for(el in role){
-      const roleAuthor = document.getElementById('roleAuthor');
+        // Saving fetched data
+        var author_role = data.personal_info.Role;
+        var author_name = data.personal_info.Name;
+        var author_email = data.personal_info.Contacts.Email;
+        var author_linkedIn = data.personal_info.Contacts.LinkedIn;
+        var author_status = data.professional_info.status;
+        var author_org = data.professional_info.organisation;
+        var author_collab_status = data.collab_info.collab_status;
+        var author_events = data.collab_info.events;
+        var author_pic = data.personal_info.Photo;
 
-      var listItem = document.createElement('li');
-      listItem.className = "listItem";
-      var infowriter = document.createElement('p');
-      infowriter.className = "infowriter";
-      infowriter.innerText = role[el];
-      listItem.appendChild(infowriter);
-      roleAuthor.appendChild(listItem);
-    }
+        // Setting up the profile image
+        var profile_pic = document.createElement('img');
+        profile_pic.src = author_pic;
+        profile_pic.style.width = "inherit";
+        profile_pic.style.objectFit = "cover";
+        pic_frame.appendChild(profile_pic);
 
-    name.innerText = author_name;
-    Email.innerText = email;
-    LinkedIn.innerText = linkedIn;
-    Status.innerText = status;
-    org.innerText = organisation;
-    sch.innerText = sch_status;
+        // Filling my name
+        name.innerHTML = author_name;
 
-    const events = data.collab_info.events;
-    for(el in events){
-      var table = document.querySelector('.tableData');
-      var row = document.createElement('tr');
-      var rowData_name_event = document.createElement('td');
-      rowData_name_event.innerHTML = events[el].name_of_event;
+        // Filling my roles
+        for(roles in author_role){
+            var li = document.createElement('li');
+            li.innerHTML = author_role[roles];
+            role.appendChild(li);
+        }
 
-      var row_org = document.createElement('td');
-      var td_ul = document.createElement('ul');
+        //Filling up Email
+        email.innerHTML = author_email;
 
-      for(x in events[el].organizer){
-        var li = document.createElement('li');
-        li.innerHTML = events[el].organizer[x];
-        td_ul.appendChild(li);
-      }
-      
-      row_org.appendChild(td_ul);
-      tableData.appendChild(row_org);
-    
-      var rowData_performance = document.createElement('td');
-      rowData_performance.innerHTML = events[el].performance;
+        //Filling up linkedIn
+        linkedIn.innerHTML = author_linkedIn;
 
-      row.appendChild(rowData_name_event);
-      row.appendChild(row_org);
-      row.appendChild(rowData_performance);
+        //Filling up Status
+        status.innerHTML = author_status;
 
-      table.appendChild(row);
-    }
-  });
+        //Filling up organisation
+        org.innerHTML = author_org;
+
+        //Filling up Status
+        sch_status.innerHTML = author_collab_status;
+
+        //Filling up the Events
+        var organizer  = [];
+        for(var event in author_events){
+            var name_event = data.collab_info.events[event].name_of_event;
+            var performance = data.collab_info.events[event].performance;
+
+            // Generating and Filling up the row
+            var row = document.createElement('tr');
+
+            // Filling up the name of the event
+            var nameEvent = document.createElement('td');
+            nameEvent.innerHTML = name_event;
+            row.appendChild(nameEvent);
+
+            // Filling up the organizers in that event
+            for(var organizers in data.collab_info.events[event].organizer){
+                var ul = document.createElement('ul');
+                var li_org = document.createElement('li');
+                li_org.innerHTML = data.collab_info.events[event].organizer[organizers]; 
+                ul.appendChild(li_org);
+                row.appendChild(ul);
+            }
+
+
+            // Filling up the performance in that particular event
+            var eventPerformance = document.createElement('td');
+            eventPerformance.innerHTML = performance;
+            row.appendChild(eventPerformance);
+
+            // Appending the generated row into the table
+            Eventtable.appendChild(row);
+        }
+
+        
+        
+    });
