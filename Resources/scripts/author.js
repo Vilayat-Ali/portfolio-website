@@ -9,6 +9,7 @@ fetch("../Resources/info/author.json")
 
     var role = data.personal_info.Role;
     var author_name = data.personal_info.Name;
+    console.log(author_name);
     var email = data.personal_info.Contacts.Email;
     var linkedIn = data.personal_info.Contacts.LinkedIn;
     var status = data.professional_info.status;
@@ -23,6 +24,8 @@ fetch("../Resources/info/author.json")
     const sch = document.querySelector('.sch_status');
     const tableData = document.querySelector('.tableData');
     
+    var events = [];
+
     for(el in role){
       const roleAuthor = document.getElementById('roleAuthor');
 
@@ -51,11 +54,13 @@ fetch("../Resources/info/author.json")
 
       var row_org = document.createElement('td');
       var td_ul = document.createElement('ul');
+
       for(x in events[el].organizer){
         var li = document.createElement('li');
         li.innerHTML = events[el].organizer[x];
         td_ul.appendChild(li);
       }
+      
       row_org.appendChild(td_ul);
       tableData.appendChild(row_org);
     

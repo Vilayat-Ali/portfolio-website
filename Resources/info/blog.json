@@ -7,6 +7,13 @@
             "date": "date",
             "author": "Syed Vilayat Ali Rizvi",
             "matter": "vilcrypt is a powerful, non-hash algorithm based, python encryption module developed by Syed Vilayat Ali Rizvi. Vilcrypt is unique due to its unique encryption mechanism, from which it manipulates data."
+        },
+        {
+            "title": "What vilcrypt have to offer in the nexct upcoming years?",
+            "blog_img": "",
+            "date": "date",
+            "author": "Syed Vilayat Ali Rizvi",
+            "matter": "Start your blog"  
         }
 
     ]

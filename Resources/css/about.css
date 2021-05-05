@@ -108,7 +108,7 @@ footer p{
 }
 }
 
-/* Desktop mode */
+/* Mobile mode */
 @media all and (max-width: 600px){
     body{
         background-color: #15afed;
@@ -154,5 +154,112 @@ footer p{
     }
     .nav-tog div:hover{
         background-color: rgba(0,0,0,0.6);
+    }
+
+
+    .author-block{
+        position: relative;
+        width: 95%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5vw;
+        margin-top: 2.5vw;
+    }
+    .author-block .col-1{
+        position: relative;
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .author-block .col-1 img{
+        width: inherit;
+        object-fit: contain;
+    }
+    .author-block .col-2{
+        padding: 10px 10px;
+        margin: 2vw 2vw;
+        position: relative;
+        width: inherit;
+        background-color: #f0eeeb;
+        margin-top: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .author-block .col-2 p{
+        text-align: center;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .author-block .col-2 p .Name{
+        font-size: 8vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .author-block .col-2 .role-title{
+        margin-top: 4vw;
+        font-size: 5vw;
+        color: black;
+        margin-left: -65%;
+    }
+    .author-block p .Email, .LinkedIn, .org, .status, .sch_status{
+        font-size: 4vw;
+        text-align: center;
+        font-style: italic;
+    }
+    .author-block .col-2 ul{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+    }
+    .author-block .col-2 ul li{
+        font-size: 4vw;
+        font-style: italic;
+    }
+    .author-block .col-2 table{
+        margin-left: -2.6vw;
+        border-collapse: collapse;
+
+    }
+    .author-block .col-2 table tr th{
+        width: 50vw;
+        font-size: 4.5vw;
+        border: 10px solid #ebde54;
+        background-color: #ebde54;
+    }
+    .author-block .col-2 table tr td ul li{
+        width: 50vw;
+        font-size: 4vw;
+        text-align: center;
+    } 
+    .author-block .col-2 table tr td{
+        width: 50vw;
+        font-size: 4vw;
+        text-align: center;
+    }   
+    .author-block .col-2 table tr:nth-child(even){
+        border: 10px solid #fff;
+        background-color: #fff;
+    }
+    .author-block .col-2 table tr:nth-child(odd){
+        border: 10px solid rgb(207, 199, 199);
+        background-color: rgb(207, 199, 199);
+    }
+    .author-block .col-2 table tr:hover{
+        border: 10px solid rgb(148, 146, 146);
+        background-color: rgb(148, 146, 146);
+        transition: all 250ms;
+    }
+    footer{
+        margin-top: 8vw;
+        width: 100%;
+        background-color: #fff;
+        padding: 2vw;
+    }
+    footer p{
+        text-align: center;
+        font-size: 4vw;
+        font-style: italic;
     }
 }

@@ -63,41 +63,62 @@
     </footer>
     <!-- Website body starts from here -->
     <script>
-        const Home = document.querySelector('.home');
-        const Doc = document.querySelector('.Doc');
-        const Contributor = document.querySelector('.Contributor');
-        const About = document.querySelector('.About');
+        var Home = document.querySelectorAll('.home');
+        var Doc = document.querySelectorAll('.Doc');
+        var Contributor = document.querySelectorAll('.Contributor');
+        var About = document.querySelectorAll('.About');
         const ham = document.querySelector('.ham');
 
-        Home.addEventListener('click', ()=>{
+        Home[0].addEventListener('click', ()=>{
             window.location.href = "../index.html";
         });
 
-        Doc.addEventListener('click', ()=>{
+        Doc[0].addEventListener('click', ()=>{
             window.location.href = "./doc.html";
         });
 
-        Contributor.addEventListener('click', ()=>{
+        Contributor[0].addEventListener('click', ()=>{
             window.location.href = "./contributor.html";
         });
 
-        About.addEventListener('click', ()=>{
+        About[0].addEventListener('click', ()=>{
+            window.location.href = "./about.html";
+        });
+
+        Home[1].addEventListener('click', ()=>{
+            window.location.href = "../index.html";
+        });
+
+        Doc[1].addEventListener('click', ()=>{
+            window.location.href = "./doc.html";
+        });
+
+        Contributor[1].addEventListener('click', ()=>{
+            window.location.href = "./contributor.html";
+        });
+
+        About[1].addEventListener('click', ()=>{
             window.location.href = "./about.html";
         });
 
         var count = false;
+        const tog = document.querySelector('.nav-tog');
+
+        tog.style.display = "none";
 
         ham.addEventListener('click', ()=>{
             if(count == false){
             const tog = document.querySelector('.nav-tog');
             tog.style.marginLeft = "0vw"; 
-            tog.style.transition = "250ms";
+            tog.style.display = "flex";
+            tog.style.transition = "350ms";
             count = true;
             }
             else{
                 const tog = document.querySelector('.nav-tog');
                 var road = tog.offsetWidth;
                 tog.style.marginLeft = "-110vw"; 
+                tog.style.display = "none";
                 tog.style.transition = "250ms";
                 count = false;    
             }
