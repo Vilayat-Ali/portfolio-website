@@ -81,8 +81,8 @@ fetch("../Resources/info/author.json")
                 li_org.innerHTML = data.collab_info.events[event].organizer[organizers]; 
                 ul.appendChild(li_org);
                 row.appendChild(ul);
-            }
 
+            }
 
             // Filling up the performance in that particular event
             var eventPerformance = document.createElement('td');

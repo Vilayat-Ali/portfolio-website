@@ -17,7 +17,7 @@
             "description": "Simplified local DBMS",
             "language": "Java",
             "platform": ["Windows 10"],
-            "available_at": "Visit the website: https://_domain_address_of_vilDB.com",
+            "available_at": "https://_domain_address_of_vilDB.com",
             "logo": "../Resources/Media/img_logo/VilDB.png"
         },
         {
@@ -27,7 +27,7 @@
             "description": "Easy & Powerful animation library for node based web appliation",
             "language": "JavaScript",
             "platform": ["NodeJS"],
-            "available_at": "Visit the website: https://_domain_address_of_vilanimX.com",
+            "available_at": "https://_domain_address_of_vilanimX.com",
             "logo": "../Resources/Media/img_logo/vilAnimX.png"
         }
     ]

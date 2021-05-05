@@ -48,12 +48,14 @@
 }
 .author-block .col-2 .role-title{
     font-size: 2.5vw;
+    text-align: left!important;
     color: black;
-    margin-left: -75%;
-
+    margin-left: 5%;
+    font-weight: bold;
+    margin-top: 1vw;
 }
 .author-block p .Email, .LinkedIn, .org, .status, .sch_status{
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
     font-style: italic;
 }
@@ -65,7 +67,7 @@
     list-style: none;
 }
 .author-block .col-2 ul li{
-    font-size: 1.6vw;
+    font-size: 2vw;
     font-style: italic;
 }
 .author-block .col-2 table{
@@ -94,7 +96,7 @@
 }
 .author-block .col-2 table tr:hover{
     border: 10px solid rgb(148, 146, 146);
-    background-color: rgb(148, 146, 146);
+    background-color: rgba(148, 146, 146);
     transition: all 250ms;
 }
 footer{
@@ -200,13 +202,15 @@ footer p{
         margin-right: auto;
     }
     .author-block .col-2 .role-title{
-        margin-top: 4vw;
-        font-size: 5vw;
+        font-size: 4vw;
+        text-align: left!important;
         color: black;
-        margin-left: -65%;
+        margin-left: 4%;
+        font-weight: bold;
+        margin-top: 8vw;
     }
     .author-block p .Email, .LinkedIn, .org, .status, .sch_status{
-        font-size: 4vw;
+        font-size: 4.5vw;
         text-align: center;
         font-style: italic;
     }
@@ -219,10 +223,13 @@ footer p{
     .author-block .col-2 ul li{
         font-size: 4vw;
         font-style: italic;
+        padding-top: 2vw;
     }
     .author-block .col-2 table{
         margin-left: -2.6vw;
         border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
 
     }
     .author-block .col-2 table tr th{
@@ -258,7 +265,8 @@ footer p{
         margin-top: 8vw;
         width: 100%;
         background-color: #fff;
-        padding: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
     footer p{
         text-align: center;
