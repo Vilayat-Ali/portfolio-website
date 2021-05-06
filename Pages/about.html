@@ -18,7 +18,6 @@
         <div class="links">
             <div class="home">Home</div>
             <div class="Doc">Documentation</div>
-            <div class="Contributor">Contributors</div>
             <div class="projects">Projects</div>
             <div class="About">About Author</div>
         </div>
@@ -27,7 +26,6 @@
     <div class="nav-tog">
         <div class="home">Home</div>
         <div class="Doc">Documentation</div>
-        <div class="Contributor">Contributors</div>
         <div class="projects">Projects</div>
         <div class="About">About Author</div>
     </div>
@@ -66,7 +64,6 @@
     <script>
         var Home = document.querySelectorAll('.home');
         var Doc = document.querySelectorAll('.Doc');
-        var Contributor = document.querySelectorAll('.Contributor');
         var About = document.querySelectorAll('.About');
         const ham = document.querySelector('.ham');
         var projects = document.querySelectorAll('.projects');
@@ -77,10 +74,6 @@
 
         Doc[0].addEventListener('click', ()=>{
             window.location.href = "./doc.html";
-        });
-
-        Contributor[0].addEventListener('click', ()=>{
-            window.location.href = "./contributor.html";
         });
 
         About[0].addEventListener('click', ()=>{
@@ -97,10 +90,6 @@
 
         Doc[1].addEventListener('click', ()=>{
             window.location.href = "./doc.html";
-        });
-
-        Contributor[1].addEventListener('click', ()=>{
-            window.location.href = "./contributor.html";
         });
 
         About[1].addEventListener('click', ()=>{
