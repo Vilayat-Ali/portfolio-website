@@ -8,6 +8,7 @@
     flex-direction: column;
     margin-left: 2.5vw;
     margin-top: 2.5vw;
+    border-radius: 2%;
 }
 .nav-tog{
     display: none;
@@ -25,6 +26,7 @@
 .author-block .col-1 img{
     width: inherit;
     object-fit: contain;
+    border-radius: 5%;
 }
 .author-block .col-2{
     padding: 10px 10px;

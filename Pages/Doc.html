@@ -8,12 +8,9 @@
     <link rel="stylesheet" href="../Resources/css/nav.css">
     <link rel="stylesheet" href="../Resources/css/doc.css">
     <title>Vilayat Project | Documentation</title>
-    <style>
+    <style>  
         /* Mobile mode */
    @media all and (max-width: 600px){
-       body{
-           background-color: #15afed!important;
-       }
        nav{
            display: flex;
            flex-direction: row;
@@ -57,18 +54,6 @@
            background-color: rgba(0,0,0,0.6);
        }
    
-   
-       footer{
-           margin-top: 8vw;
-           width: 100%;
-           background-color: #fff;
-           padding: 2vw;
-       }
-       footer p{
-           text-align: center;
-           font-size: 4vw;
-           font-style: italic;
-       }
    }
    
    </style>
@@ -92,6 +77,28 @@
         <div class="projects">Projects</div>
         <div class="About">About Author</div>
     </div>
+    <!-- Body starts from here-->
+    <div class="container-main">
+        <div class="title">
+            <p>DOCUMENTATION</p>
+        </div>
+        <div class="sub-title">
+            <p>Download your documentations below in PDF formats.</p>
+        </div>
+        <div class="container-doc">
+            <table class="table-download">
+                <tr>
+                    <th>Product / Software</th>
+                    <th>About the Product</th>
+                    <th>Download</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p class="title-footer">Vilcrypt (c) - Syed Vilayat Ali Rizvi</p>
+    </footer>
+    <!-- Body ends here -->
     <script>
         var Home = document.querySelectorAll('.home');
         var Doc = document.querySelectorAll('.Doc');
@@ -155,5 +162,6 @@
         })
     </script>
     <script src="https://kit.fontawesome.com/f89eb210df.js" crossorigin="anonymous"></script>
+    <script src="../Resources/scripts/documentation.js"></script>
 </body>
 </html>

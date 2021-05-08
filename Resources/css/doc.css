@@ -1,5 +1,6 @@
 @media all and (min-width: 600px){
-    nav{
+    body{
+        width: 100vw;
     }
     .nav-tog{
         display: none;
@@ -8,75 +9,152 @@
         display: none;
     }
     footer{
-        margin-top: 4vw;
+        margin-top: 10vw;
         width: 100%;
-        background-color: #fff;
+        background-color: transparent;
         padding: 2vw;
     }
     footer p{
         text-align: center;
         font-size: 2vw;
     }
+    .container-main{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(225,225,225,0.3);
+        filter: blur(0.02vw);
+        filter: contrast(0.2vw);
+        margin-top: 4vw;
+        width: 98%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
+    .container-main .title{
+        position: relative;
+        width: 100%;
+    }
+    .container-main .title p{
+        text-align: center;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        font-size: 4vw;
+    }
+    .container-main .sub-title{
+        position: relative;
+        width: 100%;
+    }
+    .container-main .sub-title p{
+        text-align: center;
+        font-size: 1.5vw;
+    }
+    .container-main .container-doc{
+        position: relative;
+        width: 100%;
+    }
+    .container-main .container-doc table{
+        position: relative;
+        width: 95%;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vw;
+    }
+    .container-main .container-doc table tr th, td{
+        border: 1px solid #000;
+    }
+    .container-main .container-doc table tr th{
+        font-size: 2.5vw;
+    }
+    .container-main .container-doc table tr td{
+        font-size: 1.8vw!important;
+        text-align: center;
+    }
+    .container-main .container-doc table tr .link_style{
+        font-size: 1.2vw!important;
+        text-align: center;
+        font-style: italic;
+    }
+
+}
+
     
     /* Mobile mode */
     @media all and (max-width: 600px){
         body{
-            background-color: #15afed!important;
-        }
-        nav{
-            display: flex;
-            flex-direction: row;
-            background-color: #fff!important;
             width: 100vw;
         }
-        nav .logo-brand{
-            width: 25vw;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        nav .logo-brand img{
-            width: inherit;
-            object-fit: cover;
-        }
-        nav .ham {
-            margin-top: 5vw;
-            font-size: 12vw;
-            margin-right: 10vw;
-        }
-        nav .links{
-            display: none;
-        }
-        .nav-tog{
-            width: 100vw;
-            font-size: 8vw;
-            padding-left: 4vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            background-color: #fff;
-            margin-left: -110vw;
-        }
-        .nav-tog div{
-            padding: 2vw;
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .nav-tog div:hover{
-            background-color: rgba(0,0,0,0.6);
-        }
-    
-    
         footer{
-            margin-top: 8vw;
-            width: 100%;
-            background-color: #fff;
-            padding: 2vw;
+            margin-top: 20vw;
+            width: 100vw;
+            background-color: rgba(225,225,225,0.5);
+            padding-top: 2vw;
+            padding-bottom: 2vw;
         }
         footer p{
             text-align: center;
-            font-size: 4vw;
+            font-size: 4.5vw;
+        }
+        .container-main{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(225,225,225,0.3);
+            filter: blur(0.02vw);
+            filter: contrast(0.2vw);
+            margin-top: 4vw;
+            width: 98%;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+        }
+        .container-main .title{
+            position: relative;
+            width: 100%;
+        }
+        .container-main .title p{
+            text-align: center;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            font-size: 8.5vw;
+        }
+        .container-main .sub-title{
+            position: relative;
+            width: 100%;
+        }
+        .container-main .sub-title p{
+            text-align: center;
+            font-size: 4.5vw;
+        }
+        .container-main .container-doc{
+            position: relative;
+            width: 100%;
+        }
+        .container-main .container-doc table{
+            position: relative;
+            width: 95%;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2vw;
+        }
+        .container-main .container-doc table tr th, td{
+            border: 1px solid #000;
+        }
+        .container-main .container-doc table tr th{
+            font-size: 4.5vw;
+        }
+        .container-main .container-doc table tr td{
+            font-size: 3.5vw!important;
+            text-align: center;
+            padding: 2vw;
+        }
+        .container-main .container-doc table tr .link_style{
+            font-size: 3.2vw!important;
+            text-align: center;
             font-style: italic;
         }
     }

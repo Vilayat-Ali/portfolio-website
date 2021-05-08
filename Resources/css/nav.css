@@ -5,7 +5,8 @@
 /*   --- Desktop View ---   */
 @media all and (min-width: 600px){
     body{
-        background-color: #15afed;
+        background-image: linear-gradient(#2059e8, #8b51db, #971fcf)!important;
+        background-repeat: no-repeat;
     }
     nav{
         display: flex;
@@ -42,5 +43,11 @@
     }
 }
 
+@media all and (max-width: 600px){
+    body{
+        background-image: linear-gradient(#2059e8, #8b51db, #971fcf)!important;
+        background-repeat: no-repeat;
+    }
+}
 
 

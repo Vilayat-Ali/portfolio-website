@@ -2,27 +2,13 @@
     "documentation": [
         {
             "name": "vilcrypt",
-
-            "steps": ["step-1", 
-                      "step-2", 
-                      "step-3"]
+            "about_project": "A simple yet effective encryption module for securing your python projects",
+            "path": "../Resources/docs/test.txt"
         },
-
         {
-            "name": "vildb",
-
-            "steps": ["step-1", 
-                      "step-2", 
-                      "step-3"]
-        },
-
-        {
-            "name": "vilanimx",
-
-            "steps": ["step-1", 
-                      "step-2", 
-                      "step-3"]
+            "name": "vilDB",
+            "about_project": "A simple yet effective encryption module for securing your python projects",
+            "path": "../Resources/docs/test.txt"
         }
-
     ]
 }
